@@ -89,6 +89,11 @@
         bottom: 35px;
       }
 
+     .form-wrap form .submit-button button.login {
+        position: relative;
+        bottom: 30px;
+      }
+
       .form-wrap form .account-have {
         display: flex;
         justify-content: space-between;
