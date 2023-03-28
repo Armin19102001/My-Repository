@@ -93,27 +93,52 @@ function hideText() {
 }
 
 
-var btn = document.getElementById('btn');
-btn.addEventListener('click', function(e) {
-    e.preventDefault();
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var phone = document.getElementById("phone").value;
-    var subject = document.getElementById("subject").value;
-    var message = document.getElementById("message").value;
+function myFunction() {
+    const form = document.getElementById("form");
+    const thanks = document.getElementById("thanks");
+    const heading = document.getElementById("heading");
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
 
-    var body = 'name: '+name + '<br/> email: ' + email + '<br/> subject: ' +subject + 
-    '<br/> message: '+message;
+    if (name == "") {
+        swal(
+        "Opps..!", 
+        "Full name field has no value!", 
+        "error"
+        );
+    } else if (email == "") {
+        swal(
+            "Opps..!", 
+            "Email Address field has no value!", 
+            "error"
+        );
+    } else if (message == "") {
+        swal(
+            "Opps..!", 
+            "Your Message is missing!", 
+            "error"
+        );
+    } else {
+        swal(
+            "Thanks for contacting us!",
+            "We will reply ASAP", 
+            "success"
+        );
+        setTimeout(() => {
+            form.style.display = "none";
+            heading.style.display = "none";
+        }, 2000);
 
-
-    Email.send({
-        SecureToken : "499d8ff8-0fdc-4ad1-b157-87100eed0e96",
-        To : 'armindjippp@gmail.com',
-        From : "developerarmin01@gmail.com",
-        Subject : "CONTACT MESSAGE",
-        Body : body
-    }).then(
-      message => alert(message)
-    );
-
-});
+        setTimeout(() => {
+            thanks.style.display = "block";
+        }, 2000);
+        
+    }
+    
+    
+    
+    
+    
+     
+}

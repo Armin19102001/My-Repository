@@ -96,12 +96,10 @@
 
           <h3>Web Development</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
-            facilis asperiores accusantium repellendus, dolor cum ea dolorum
-            quae beatae non!
+            You will get Fast, Attractive and completely Responsive website
           </p>
 
-          <a href="#" class="btn">Read More</a>
+          <a href="#contact" class="btn">GET A QUOTE</a>
         </div>
 
         <div class="services-box">
@@ -109,13 +107,48 @@
 
           <h3>Web Design</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
-            facilis asperiores accusantium repellendus, dolor cum ea dolorum
-            quae beatae non!
+            Beautiful UI/UX Website Design
           </p>
 
-          <a href="#" class="btn">Read More</a>
+          <a href="#contact" class="btn">GET A QUOTE</a>
         </div>
+
+        <div class="services-box">
+          <i class="bx bxs-palette"></i>
+
+          <h3>Logo Design</h3>
+          <p>
+            Designing and Redesigning Logo
+          </p>
+
+          <a href="#contact" class="btn">GET A QUOTE</a>
+        </div>
+
+        <div class="services-box">
+          <i class="bx bx-search-alt"></i>
+
+          <h3>SEO</h3>
+          <p>
+            Improving your website's position in search results pages
+          </p>
+
+          <a href="#contact" class="btn">GET A QUOTE</a>
+        </div>
+
+
+        <div class="services-box">
+          <i class="bx bxl-wordpress"></i>
+
+          <h3>CMS</h3>
+          <p>
+            Beautiful and mobile friendly website using CMS platforms: Wordpress, Wix and Joomla
+          </p>
+
+          <a href="#contact" class="btn">GET A QUOTE</a>
+        </div>
+        
+
+
       </div>
     </section>
 
@@ -209,7 +242,7 @@
           <img src="images/registration_and_login_form.png" alt="" />
 
           <div class="portfolio-layer">
-            <h4>Web Development</h4>
+            <h4>Web Design</h4>
             <p>
               Registration and Login Form.
             </p>
@@ -233,7 +266,7 @@
           <img src="images/text_editor.png" alt="" />
 
           <div class="portfolio-layer">
-            <h4>Web Development</h4>
+            <h4>Web Design</h4>
             <p>
               Cool Text Editor.
             </p>
@@ -245,17 +278,19 @@
 
     <!-- contact section desing -->
     <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>Me!</span></h2>
+      <h2 class="heading" id="heading">Contact <span>Me!</span></h2>
+      <h2 class="thanks" id="thanks">Thanks for <span>Contacting us!</span></h2>
 
-      <form action="https://formsubmit.co/developerarmin01@gmail.com" method="post">
+      <!-- https://formsubmit.co/developerarmin01@gmail.com -->
+      <form id="form">
         <div class="input-box">
-          <input type="text" name="name" placeholder="Full Name" />
-          <input type="email" name="email" placeholder="Email Address" />
+          <input type="text" id="name" name="name" placeholder="Full Name" />
+          <input type="email" id="email" name="email" placeholder="Email Address" />
         </div>
 
         <div class="input-box">
-          <input type="number" name="phone" placeholder="Mobile Number" />
-          <input type="text" name="subject" placeholder="Email Subject" />
+          <input type="number" id="phone" name="phone" placeholder="Mobile Number" />
+          <input type="text" id="subject" name="subject" placeholder="Email Subject" />
         </div>
 
         <textarea
@@ -267,7 +302,7 @@
         ></textarea>
 
         <div class="button-area">
-          <input type="submit" id="btn" value="Send Message" class="btn" />
+          <input type="button" onclick="myFunction()" id="btn" value="Send Message" class="btn" />
         </div>
       </form>
     </section>
@@ -283,9 +318,11 @@
       </div>
     </footer>
 
+
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="js/sweetalert.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
